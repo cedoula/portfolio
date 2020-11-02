@@ -364,6 +364,6 @@ body {
   background: black;
   background-image: url("../images/data_sc.jpg");
   background-attachment: fixed;
-  background-position: center;
+  background-position: top;
   background-size: cover;
 }
