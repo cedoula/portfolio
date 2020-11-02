@@ -27,37 +27,38 @@
 <body>
     <!-- Nav Bar -->
     <nav class="navbar navbar-expand-lg navbar-light bg-dark">
-        <a class="navbar-brand" href="#" style="color: white;">Navbar</a>
+        <a class="navbar-brand" href="index.html" style="color: white;">Portfolio</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
-        <div class="collapse navbar-collapse" id="navbarNavDropdown">
-          <ul class="navbar-nav">
-            <li class="nav-item active">
-              <a class="nav-link" href="#" style="color: white;">Home <span class="sr-only">(current)</span></a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#" style="color: white;">Features</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#" style="color: white;">Pricing</a>
-            </li>
+        <div class="collapse navbar-collapse collapse w-100 order-3 dual-collapse2" id="navbarNavDropdown">
+          <ul class="navbar-nav ml-auto">
             <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style="color: white;">
-                Dropdown link
-              </a>
-              <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                <a class="dropdown-item" href="#">Action</a>
-                <a class="dropdown-item" href="#">Another action</a>
-                <a class="dropdown-item" href="#">Something else here</a>
-              </div>
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style="color: white;">
+                  Projects
+                </a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                  <a class="dropdown-item" href="#belly">Belly Button Biodiversity</a>
+                  <a class="dropdown-item" href="#mapping">Mapping Earthquakes</a>
+                  <a class="dropdown-item" href="#ufos">UFOs</a>
+                  <a class="dropdown-item" href="#bikesharing">Bikesharing</a>
+                </div>
+            </li>
+            <li class="nav-item active">
+              <a class="nav-link" href="assets/images/CEDRIC_VANZA_LUTONDA_Resume.pdf" style="color: white;">Resume <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#about_me" style="color: white;">About Me</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#contact_me" style="color: white;">Contact</a>
             </li>
           </ul>
         </div>
       </nav>
 
     <header>
-        <div class="wave">
+        <div class="wave hero">
             <div class="container header-container">
                 <h1 class="name">Cedric Vanza</h1>
                 <h3 class="subtitle text-center">Reveal the story behind your data.</h3>
@@ -126,8 +127,8 @@
 
     </section>
 
-    <section class="container-color">
-    </section>
+    <!--<section class="container-color">
+    </section>-->
 
     <!--<div class="wave-svg-color">
         <svg xmlns="http://www.w3.org/2000/svg" opacity="1" width="100%" height="80"
@@ -148,7 +149,7 @@
     </section>
     <section class="container">
         <div class="card custom-card">
-            <div class="card-body">
+            <div class="card-body"  id="about_me">
                 <span class="card-icon">
                     <i class="fas fa-code"></i>
                 </span>
@@ -161,7 +162,7 @@
                     Technologies I use:
                 </h5>
                 <p class="card-text">
-                    Python, SQL, HTML5, CSS3, Git, Bootstrap, JavaScript, JSON, Plotly, D3
+                    Python, SQL, HTML5, CSS3, Git, Bootstrap, JavaScript, JSON, Plotly, D3, Tableau
                 </p>
             </div>
         </div>
@@ -185,7 +186,7 @@
                     <i class="fas fa-star fa-align"></i>
 
                 </div>
-                <div class="timeline-content">
+                <div class="timeline-content" id="belly">
                     <h2>Belly Button Biodiversity</h2>
                     <p>
                         This project focuses on building an interactive dashboard to visualize the bacterial species living in the navel of candidates of a research about meat protein synthesis from human bacteria.
@@ -200,7 +201,7 @@
                     <i class="fas fa-star fa-align"></i>
 
                 </div>
-                <div class="timeline-content right">
+                <div class="timeline-content right" id="ufos">
                     <h2>UFOs</h2>
                     <p>
                         This project focuses on building a dynamic webpage that accepts user inputs and adjusts accordingly to display information about UFO sightings.<br>
@@ -215,7 +216,7 @@
                 <div class="timeline-icon">
                     <i class="fas fa-star fa-align"></i>
                 </div>
-                <div class="timeline-content">
+                <div class="timeline-content" id="mapping">
                     <h2>Mapping Earthquakes</h2>
                     <p>
                         The objective of this project is to gather earthquake GeoJSON data from the USGS API, create and explore interactive maps of earthquakes around the world.
@@ -226,24 +227,22 @@
                 </div>
             </div>
 
-            <!--<div class="timeline-item">
+            <div class="timeline-item">
                 <div class="timeline-icon">
                     <i class="fas fa-star fa-align"></i>
 
                 </div>
-                <div class="timeline-content right">
-                    <h2>Project Title 4</h2>
+                <div class="timeline-content right" id="bikesharing">
+                    <h2>Bikesharing</h2>
                     <p>
-                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atque, facilis quo. Maiores magnam
-                        modi ab libero praesentium blanditiis consequatur aspernatur accusantium maxime molestiae sunt
-                        ipsa.
+                        Analysis of New York Citi Bike data, using data visualization tools to explore the viability of a bike-sharing business in Des Moines.
                     </p>
-                    <a href="https://github.com" class="btn"><i class="fab fa-github"></i> Code</a>
-                    <a href="#" class="btn"><i class="fas fa-tv"></i> Live Demo</a>
+                    <a href="https://github.com/cedoula/bikesharing.git" class="btn"><i class="fab fa-github"></i> Code</a>
+                    <a href="https://public.tableau.com/views/NYCCitiBikeAnalysis_16040907256420/Story1?:language=en&:display_count=y&publish=yes&:origin=viz_share_link" class="btn"><i class="fas fa-tv"></i> Live Demo</a>
                 </div>
             </div>
 
-            <div class="timeline-item">
+            <!--<div class="timeline-item">
                 <div class="timeline-icon">
                     <i class="fas fa-star fa-align"></i>
                 </div>
@@ -298,7 +297,7 @@
     </section>
 
     <!-- FOOTER -->
-    <section class="container-dark">
+    <section class="container-dark"  id="contact_me">
         <div class="container">
             <h1>Contact Me</h1>
             <h3 class="intro subtitle">

@@ -326,13 +326,13 @@ footer a {
 }
 
 body {
-	background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
-	background-size: 400% 400%;
-	-webkit-animation: gradient 15s ease infinite;
-	        animation: gradient 15s ease infinite;
+	background: linear-gradient(-45deg,/* #ee7752,*/ #e73c7e, #23a6d5/*, #23d5ab*/);
+	/*background-size: 400% 400%;*/
+	/*-webkit-animation: gradient 15s ease infinite;
+	        animation: gradient 15s ease infinite;*/
 }
 
-@-webkit-keyframes gradient {
+/*@-webkit-keyframes gradient {
 	0% {
 		background-position: 0% 50%;
 	}
@@ -354,4 +354,16 @@ body {
 	100% {
 		background-position: 0% 50%;
 	}
+}*/
+
+.hero {
+  position: relative;
+  height: 550px;
+  padding: 20px;
+  margin: 0;
+  background: black;
+  background-image: url("../images/data_sc.jpg");
+  background-attachment: fixed;
+  background-position: center;
+  background-size: cover;
 }
