@@ -3,8 +3,7 @@ body {
 	background-size: 400% 400%;
 	-webkit-animation: gradient 15s ease infinite;
 			animation: gradient 15s ease infinite;
-	padding-top: 60px; /* 60px to make the container go all the way to the bottom of the topbar */
-
+	padding-top: 100px; /* 60px to make the container go all the way to the bottom of the topbar */
 }
 
 @-webkit-keyframes gradient {
